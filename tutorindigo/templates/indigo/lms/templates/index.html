@@ -20,7 +20,8 @@ from openedx.core.djangolib.markup import HTML, Text
           % endif
         </div>
         <h1 class="hero-title">At iMMAP, we take <span style="color: #be2126;">data</span>, turn it into information, and  <span style="color: #be2126;">create knowledge.</span></h1>
-        <h1 class="hero-title">Join our courses to transform <span style="color: #be2126;">knowledge</span> into <span style="color: #be2126;">action</span>!</h1>        % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+        <h1 class="hero-title">Join our courses to transform <span style="color: #be2126;">knowledge</span> into <span style="color: #be2126;">action</span>!</h1>
+        % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
           <div class="course-search">
             <form method="get" action="/courses">
               <div class="search-field-wrapper">
@@ -48,7 +49,6 @@ from openedx.core.djangolib.markup import HTML, Text
   </section>
 </main>
 
-
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
     <div class="inner-wrapper">
@@ -58,19 +58,17 @@ from openedx.core.djangolib.markup import HTML, Text
 % endif
 
 <%block name="js_extra">
-   <script type="text/javascript">
-      $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-   </script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      if (getParameterByName('next')) {
+        $('#login').trigger("click");
+      }
+    })
+  </script>
 </%block>
 
 % if show_signup_immediately is not UNDEFINED:
-  ## NOTE: This won't work in production, because anonymous views are cached, so it will
-  ## show either with or without this extra js for 3 minutes at a time.
-<script type="text/javascript">
-  $(window).load(function() {$('#signup_action').trigger("click");});
-</script>
+  <script type="text/javascript">
+    $(window).load(function() {$('#signup_action').trigger("click");});
+  </script>
 % endif
