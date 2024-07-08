@@ -134,3 +134,133 @@ section.home {
         }
     }
 }
+
+.hero {
+    padding: 80px 0;
+    text-align: center;
+  
+    .hero-content {
+      max-width: 1000px;
+      margin: 0 auto;
+  
+      .heading-group {
+        margin: 0 0 25px;
+        text-align: left;
+        padding: 0;
+        
+        h1 {
+          font-size: 32px;
+          font-weight: bold;
+          color: #333;
+          text-align: center;
+        }
+
+        p {
+          font-size: 18px;
+          color: #666;
+          margin-bottom: 30px;
+        }
+        
+      }
+
+      .hero-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+      }
+
+      
+  
+      .course-search {
+        padding: 0;
+        margin-top: 80px;
+
+        .search-field-wrapper {
+          &:after {
+            clear: both;
+            content: "";
+            display: block;
+          }
+  
+          .button-holder {
+            float: right;
+  
+            button {
+              position: static;
+              margin: 0 0 0 16px;
+              min-width: 90px;
+              color: #fff;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 26px;
+              text-align: center;
+              padding: 6px;
+              height: 38px;
+              border-radius: 6px;
+              background: $primary;
+              font-family: $font-family-title;
+              border: none;
+  
+              @include media-breakpoint-up(sm) {
+                min-width: 100px;
+              }
+  
+              &:hover {
+                background: $primary;
+                opacity: 0.8;
+              }
+            }
+          }
+  
+          .input-holder {
+            overflow: hidden;
+            border-radius: 6px;
+            background: $primary-light;
+            padding: 0 0 0 33px;
+            position: relative;
+            display: block;
+  
+            svg {
+              position: absolute;
+              left: 12px;
+              font-size: 20px;
+              top: 10px;
+            }
+  
+            input {
+              border: none;
+              box-shadow: none;
+              height: 38px;
+              width: 100%;
+              background: none;
+              outline: none;
+              font-size: 14px;
+              line-height: 20px;
+              padding: 9px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  
+// New Section: Explore Our Courses
+.explore-courses {
+    padding: 50px 0;
+    text-align: center;
+  
+    .explore-courses-title {
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #be2126;
+      display: inline-block;
+      
+    }
+  }

@@ -1,3 +1,4 @@
+
 <%namespace name='static' file='../static_content.html'/>
 <%page expression_filter="h"/>
 <%! from django.utils.translation import gettext as _ %>
@@ -7,15 +8,23 @@
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
-        </h1>
-        <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
-        <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
-            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
-        </div>
+        <h1>Welcome to iMMAP’s learning platform for humanitarian and development professionals in Afghanistan!</h1>
+        <p>All the courses and learning resources on the platform are free for all.</p>
+        <p>Why wait — register now to explore our courses!</p>
+        
+        <h2>What you can find on the platform:</h2>
+        <ul>
+            <li>Online self-directed courses</li>
+            <li>Information about in-person workshops and training</li>
+            <li>Learning resources, such as videos, and much more!</li>
+        </ul>
+        
+        <p>Launched in 2024, we continue to create new tailored courses on information management and data literacy accessible for all.</p>
+        
+        <h2>About iMMAP Inc.</h2>
+        <p>iMMAP Inc. is an international nonprofit organization that has been delivering information management services to humanitarian and development organizations in Afghanistan since 2007.</p>
+        <p>Our mission is to empower partners to make informed decisions that result in high-quality, targeted assistance for the world’s most vulnerable populations.</p>
+        <p>We offer a comprehensive range of services, including capacity strengthening, tailored to enhance the abilities of technical and non-technical stakeholders in information management. Our focus areas in capacity strengthening encompass critical sectors such as food security, health, disaster risk reduction, and more.</p>
+   
     </section>
 </main>

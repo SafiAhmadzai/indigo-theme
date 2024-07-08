@@ -258,12 +258,27 @@ nav.wrapper-preview-menu {
       font-size: 24px;
       font-weight: 700;
       line-height: 34px;
-      margin: 0 0 12px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       text-align: left;
       color: $dark;
     }
+    
+    h2 {
+      font-size: 22px;
+      color: #333;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #be2126;
+      display: inline-block;
+    }
+
     p {
       margin: 0 0 20px;
+      text-align: justify;
+
     }
     a {
       color: $primary;
